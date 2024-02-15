@@ -19,9 +19,9 @@ function showMedSumNumbers() {
         }     
     }
 
-    medSum = sum / arrNumbers.length; //среднее арифм. за пределами цикла, чтобы return увидел значение, да?
+    medSum = sum / arrNumbers.length;
 
-    return(medSum); // medSum возвращается в скобки функции
+    return(medSum);
 }
 
 arr.push(1,1,1,22,1,'s','s','d');

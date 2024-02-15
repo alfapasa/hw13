@@ -2,35 +2,6 @@
 // У змінній znak може бути: +, -, *, /, %, ^ (ступінь ).
 // Вивести результат математичної дії, вказаної в змінній znak.Обидва числа і знак виходять від користувача.
 
-// let x = parseFloat(prompt('Write first digit:'));
-// let y = parseFloat(prompt('Write second digit:'));
-// let znak = prompt('Write math symbol:');
-// let result;
-
-// switch (znak) {
-//     case "+":
-//         result = x + y;
-//     break;
-//     case "-":
-//         result = x - y;
-//     break;
-//     case "*":
-//         result = x * y;
-//     break;
-//     case "/":
-//         result = x / y;
-//     break;
-//     case "^":
-//         result = x ^ y;
-//     break;
-//     default:
-//         console.log('The digit or symbol is not correct');
-// }
-
-// console.log("Result: ",result);
-
-
-
 let x = parseFloat(prompt('Write first digit:'));
 let znak = prompt('Write math symbol:');
 let y = parseFloat(prompt('Write second digit:'));
@@ -51,7 +22,8 @@ function doMath(x, znak, y) {
             result = x / y;
         break;
         case "^":
-            result = x ^ y;
+            result = x **
+             y;
         break;
         default:
             console.log('The digit or symbol is not correct');

@@ -15,11 +15,6 @@
 // createArr();
 
 
-
-
-// let newArr = arr.splice(2,4);
-
-
 let arr = [];
 
 function createArr() {

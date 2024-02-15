@@ -14,9 +14,9 @@ function showMedSumNumbers() {
 
         if (typeof arr[i] === 'number') {
             arrNumbers.push(arr[i]);
-        }     
 
-        sum += arrNumbers[i]; //считаю тут сумму потому что i не будет видно за пределами цикла for;
+            sum += arrNumbers[i];
+        }     
     }
 
     medSum = sum / arrNumbers.length; //среднее арифм. за пределами цикла, чтобы return увидел значение, да?
@@ -24,6 +24,6 @@ function showMedSumNumbers() {
     return(medSum); // medSum возвращается в скобки функции
 }
 
-arr.push(1,1,1,1,1,'s','s','d');
+arr.push(1,1,1,22,1,'s','s','d');
 
 console.log(showMedSumNumbers());

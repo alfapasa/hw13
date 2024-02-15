@@ -19,7 +19,7 @@ function showMedSumNumbers() {
         sum += arrNumbers[i]; //считаю тут сумму потому что i не будет видно за пределами цикла for;
     }
 
-    medSum = sum / arrNumbers.length;
+    medSum = sum / arrNumbers.length; //среднее арифм. за пределами цикла, чтобы return увидел значение, да?
 
     return(medSum); // medSum возвращается в скобки функции
 }

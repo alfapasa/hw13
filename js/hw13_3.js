@@ -2,33 +2,22 @@
 // Довжину основного масиву і внутрішніх масивів задає користувач.
 // Значення всіх елементів всіх масивів задає користувач.
 
-// let arr = [];
 
-// function createArr() {
-//     let arrLength = parseInt(prompt(`Write the quantityof digits for this array:`));
-
-//     for (let i = 0; i < arrLength; i++) {
-//         let digit = prompt(`Write the digit for this array:` + (i + 1));
-//         arr.push(digit);
-//     }
-// }
-// createArr();
-
-
-let arr = [];
-
-function createArr() {
+function userArr() {
     let innerArrQuantity = parseInt(prompt(`Write the quantityof inner arrays:`));
-    let a = 0;
+    let arr = [];
 
-    do {
-    let arrLength = parseInt(prompt(`Write the quantityof digits for this array:`));
-
-    for (let i = 0; i < arrLength; i++) {
-        let digit = prompt(`Write the digit for this array:` + (i + 1));
-        arr.push(digit);
+    for (let i = 0; i < innerArrQuantity; i++) {
+        let innerArr = [];
+        let quantityOfSymbols = parseInt(prompt(`Write the quantity of symbols for the ${i} array`));
+        for (let a = 0; a < quantityOfSymbols; a++) {
+            let value = parseInt(prompt(`Write the ${a} number for the ${i} array`));
+            innerArr.push(value);
+        }
+    arr.push(innerArr);
     }
-    } while (a <= innerArrQuantity);
+    return arr;
 }
-createArr();
-console.log(arr);
+
+let result = userArr();
+console.log(result);
